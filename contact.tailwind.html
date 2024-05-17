@@ -13,7 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>tailwind</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Contact</title>
 </head>
 
 <body>
@@ -22,58 +24,87 @@
             class="bg-[url('image/photo-haut-page5.jpg')] bg-cover p-6 bg-center bg-blend-color bg-[#00000060] text-center items-center justify-center">
             <nav class="flex justify-around items-center">
                 <a href=""><img src="./image/logo-120x34.png" alt="LOGO"></a>
-                <ul class="text-white text-xl flex gap-9 items-center max-md:flex-col">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a class="btn btn-secondary rounded-full hover:bg-[#90204]" href="">Take action</a></li>
+                <ul class="text-white text-xl flex gap-9 items-center max-md:flex-col max-md:hidden">
+                    <li><a href="Home.tailwind.html">Home</a></li>
+                    <li><a href="About.tailwind.html">About</a></li>
+                    <li><a href="service.tailwind.html">Services</a></li>
+                    <li><a href="project.tailwind.html">Projects</a></li>
+                    <li><a href="contact.tailwind.html">Contact</a></li>
+                    <li><a class="btn btn-secondary rounded-full bg-[#fb2056] hover:bg-[#90204]" href="">Take action</a>
+                    </li>
                 </ul>
             </nav>
             <section class="text-center p-9 text-center items-center justify-center">
-                <h1 class="text-white text-center text-[4rem] font-[montserra]">Contact Us</h1>
+                <h1 class="text-white text-center text-[30px] font-[montserra] font-bold">Contact Us</h1>
             </section>
     </header>
-    <section class="p-9 flex items-center">
-        <div class="p-9">
-            <h2 class="text-center font-[montserra] text-3xl font-bold">We're Ready, Let's Talk.</h2>
-            <div class="p-6">
-                <label for="name"></label>
-                <input type="text" placeholder="Your name">
-            </div>
-            <div class="p-6">
-                <label for="email"></label>
-                <input type="text" placeholder="Email Address">
-            </div>
-            <div class="p-6">
-                <label for="Message"></label>
-                <textarea placeholder="Message"></textarea>
-            </div>
-            <button class="btn btn-secondary rounded-full">SEND MESSAGE</button>
+    <section class="p-6 flex items-center justify-around max-md:flex-col">
+        <div class="w-full max-w-md bg-white p-8">
+            <h2 class="text-[34px] font-[Montserrat] font-bold">We're Ready, Let's Talk.</h2>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input type="text" id="name" name="name" placeholder="Your Name"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <input type="email" id="email" name="email" placeholder="Email Adress"
+                        class=" border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2"></label>
+                    <textarea id="message" name="message" rows="4" placeholder="Message"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                        class=" text-white rounded-full bg-[#FB2056] hover:bg-[#575252] font-[Noto] text-[16px] p-[15px] font-bold">SEND
+                        MESSAGE</button>
+                </div>
+            </form>
         </div>
-        <div class="p-9 ">
-            <h2 class="font-[montserra] text-3xl font-bold">Contact Info</h2>
-            <h4 class=" font-[montserra]font-bold text-xl">Address</h4>
-            <address>123 Fifth Avenue, NY 10160, New York, USA</address>
-            <h4 class="font-[montserra]font-bold text-xl">Email Us</h4>
-            <p>contact@example.com</p>
-            <h4 class="font-[montserra]font-bold text-xl">Call Us</h4>
-            <p>800-123-456</p>
-            <h4>Follow Us</h4>
-        </div>
-        <div class="h-30 w-30 flex bg-[#fb2056] br-[50%]">
-            <a class="icone" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg></a>
-        </div>
-        <div>
-            <i class="fa-brands fa-youtube" style="color: #1b1818;"></i>
+        <div class="p-6 items-center">
+            <h2 class="font-[montserra] text-[34px] font-bold">Contact Info</h2>
+            <div>
+                <h4 class=" font-[montserra]font-bold text-[16px]">Address</h4>
+                <p class="font-[Noto] text-[15px]">123 Fifth Avenue, NY 10160, New York, USA</p>
+
+            </div>
+            <div>
+                <h4 class="font-[montserra]font-bold text-[16px]">Email Us</h4>
+                <p class="font-[Noto] text-[15px]">contact@example.com</p>
+            </div>
+            <div>
+                <h4 class="font-[montserra]font-bold text-[16px]">Call Us</h4>
+                <p class="font-[Noto] text-[15px]">800-123-456</p>
+            </div>
+            <h4 class="">Follow Us</h4>
+            <div class="flex justify-between hover-[#90204]">
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#fb2056"
+                            d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20" width="17.5"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#fb2056"
+                            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
+                    </svg></a>
+                <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" width="21"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#fb2056"
+                            d="M282 256.2l-95.2-54.1V310.3L282 256.2zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm14.4 136.1c7.6 28.6 7.6 88.2 7.6 88.2s0 59.6-7.6 88.1c-4.2 15.8-16.5 27.7-32.2 31.9C337.9 384 224 384 224 384s-113.9 0-142.2-7.6c-15.7-4.2-28-16.1-32.2-31.9C42 315.9 42 256.3 42 256.3s0-59.7 7.6-88.2c4.2-15.8 16.5-28.2 32.2-32.4C110.1 128 224 128 224 128s113.9 0 142.2 7.7c15.7 4.2 28 16.6 32.2 32.4z" />
+                    </svg></a>
+
+            </div>
         </div>
     </section>
     <footer class="bg-[black] border-solid text-[white] text-center p-9">
-        <p class="class1">123 Fifth Avenue,NY10160,New York,USA | Phone: 800-123-456 | Email:contact@example.com</p>
-        <p class="class2">Copyright © 2022 Outdoor Adventure</p>
+        <p class="font-[Noto] text-[15px]">123 Fifth Avenue,NY10160,New York,USA | Phone: 800-123-456 |
+            Email:contact@example.com</p>
+        <p class="font-[Noto] text-[15px]">Copyright © 2022 Outdoor Adventure</p>
     </footer>
-
 </body>
 
 </html>

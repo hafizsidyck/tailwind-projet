@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>tailwind</title>
 </head>
 
@@ -22,13 +24,13 @@
             class="bg-[url('image/fond-ecran-page2.jpg')] bg-cover p-6 bg-center bg-blend-color bg-[#00000060] text-center items-center justify-center">
             <nav class="flex justify-around items-center">
                 <a href=""><img src="./image/logo-120x34.png" alt="LOGO"></a>
-                <ul class="text-white text-xl flex gap-9 items-center max-md:flex-col">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a class="btn btn-secondary rounded-full hover:bg-[#90204]" href="">Take action</a></li>
+                <ul class="text-white text-xl flex gap-9 items-center max-md:flex-col max-md:hidden">
+                    <li><a href="Home.tailwind.html">Home</a></li>
+                    <li><a href="About.tailwind.html">About</a></li>
+                    <li><a href="service.tailwind.html">Services</a></li>
+                    <li><a href="project.tailwind.html">Projects</a></li>
+                    <li><a href="contact.tailwind.html">Contact</a></li>
+                    <li><a class="btn btn-secondary rounded-full bg-[#fb2056] hover:bg-[#90204]" href="">Take action</a></li>
                 </ul>
             </nav>
             <section class="text-center p-9 text-center items-center justify-center">
@@ -36,7 +38,7 @@
             </section>
         </section>
     </header>
-    <section class=" p-6 flex">
+    <section class=" p-6 flex justify-around gap-8 max-md:flex-col">
         <div class="p-6 justify-around flex-col gap-3">
             <h2 class="font-[montserra] text-2xl">Our Mission</h2>
             <div class="p-2">
@@ -46,14 +48,15 @@
                 <p class="">Click edit button to change this text. Lorem ipsum dolor sit amet, adipiscing elit.</p>
             </div>
             <div class="p-6">
-                <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
+                <p>Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            </div>
         </div>
         <div class="justify-around flex-col gap-3">
             <img src="./image/cascade.jpg" alt="">
         </div>
     </section>
-    <section class="flex p-6 gap-3">
+    <section class="flex p-6 gap-3 justify-around flex gap-8 max-md:flex-col">
         <div class="flex gap-3 justify-around flex-col">
             <h3 class="font-[montserra] text-2xl">Extraordinary Experiences</h3>
             <div class="">
@@ -80,8 +83,8 @@
         </div>
     </section>
     <footer class="bg-[black] border-solid text-[white] text-center p-9">
-        <p class="class1">123 Fifth Avenue,NY10160,New York,USA | Phone: 800-123-456 | Email:contact@example.com</p>
-        <p class="class2">Copyright © 2022 Outdoor Adventure</p>
+        <p class="font-[Noto] text-[15px]">123 Fifth Avenue,NY10160,New York,USA | Phone: 800-123-456 | Email:contact@example.com</p>
+        <p class="font-[Noto] text-[15px]">Copyright © 2022 Outdoor Adventure</p>
     </footer>
 </body>
 
